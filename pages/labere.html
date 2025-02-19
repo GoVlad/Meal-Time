@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MealTime</title>
+  <link rel="icon" href="../img/1000008989.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+  <script src="../js/script.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="sidebar">
+      <div class="titlu-logo">
+        <img class="logo" src="../img/1000008989.jpg">
+        <h1 class="mealtime-h1">Meal Time</h1>
+      </div>
+      <a href="../index.html">Home</a>
+      <hr class="hr-details">
+      <details class="details-content">
+        <summary>Meniu</summary>
+        <a class="details-content-a" href="bauturi.html">Băuturi</a>
+        <a href="fastfood.html">Fast Food</a>
+        <a href="labere.html">La bere</a>
+        <a href="mancalda.html">Mâncare caldă</a>
+        <a href="salate.html">Salate</a>
+        <a href="pizza.html">Pizza</a>
+      </details>
+      <hr class="hr-details">
+      <a href="contacte.html">Contacte</a>
+    </div>
+    <div class="header-mobile">
+      <div class="titlu-logo">
+        <img class="logo" src="../img/1000008989.jpg">
+        <h1 class="mealtime-h1">Meal Time</h1>
+        <button id="hamburger" onclick="mobileMenu()"><i class="fas fa-bars"></i></button>
+      </div>
+        <nav class="">
+          <a href="../index.html">Home</a>
+          <details class="details-content">
+            <summary>Meniu</summary>
+            <a href="bauturi.html">Băuturi</a>
+            <a href="fastfood.html">Fast Food</a>
+            <a href="labere.html">La bere</a>
+            <a href="mancalda.html">Mâncare caldă</a>
+            <a href="salate.html">Salate</a>
+            <a href="pizza.html">Pizza</a>
+          </details>
+          <a href="contacte.html">Contacte</a>
+        </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-bere">
+      <h1 class="title">La bere</h1>
+    </div>
+
+    <h1 class="title">Bere</h1>
+
+    <div class="container-produse">
+      <div class="product">
+        <img src="https://alcomarket.md/public/products/thumbs/items-5736-5135.png" alt="Produs">
+        <p>"Corona"</p>
+        <h3>50 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+      <div class="product">
+        <img src="https://linella.md/public/products/75dbc3d62638d3a6ab003acf31107152.webp" alt="Produs">
+        <p>"Finch"</p>
+        <h3>24 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+      <div class="product">
+        <img src="https://linella.md/public/products/58536b8d95fd4bbdb9c7671206d451e2.webp" alt="Produs">
+        <p>"Efes"</p>
+        <h3>29 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+      <div class="product">
+        <img src="https://alcoolstore.ro/wp-content/uploads/2021/05/bere-timisoreana-033l.jpg.webp" alt="Produs">
+        <p>"Timișoreana"</p>
+        <h3>27 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+      <div class="product">
+        <img src="https://alcomarket.md/public/products/thumbs/items-5914-5165.png" alt="Produs">
+        <p>"Kozel"</p>
+        <h3>32 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+      <div class="product">
+        <img src="https://linella.md/public/products/40accfb690f291dd25607fc4cc1be8fb.webp" alt="Produs">
+        <p>"Radler"</p>
+        <h3>28 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+      <div class="product">
+        <img src="https://alcomarket.md/public/products/thumbs/items-5699-3177.png" alt="Produs">
+        <p>"Heineken"</p>
+        <h3>40 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+      <div class="product">
+        <img src="https://winetime.md/images/product/2024/03/Bere-Krusovice-Cerne.png" alt="Produs">
+        <p>"Krusovice"</p>
+        <h3>45 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+      <div class="product">
+        <img src="https://winetime.md/images/product/2023/16/bere-birra-moretti-033l-30713045645.png" alt="Produs">
+        <p>"Birra Moretti"</p>
+        <h3>50 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+      <div class="product">
+        <img src="https://www.megaalina.md/upfiles/goods-items/177156001716379258.webp" alt="Produs">
+        <p>"Baltika Meagkoe 7"</p>
+        <h3>27 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+      <div class="product">
+        <img src="https://winetime.md/images/product/2023/15/bere-jiguli-05l-00713023455.png" alt="Produs">
+        <p>"Jiguli"</p>
+        <h3>27 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+      <div class="product">
+        <img src="https://alcomarket.md/public/products/thumbs/items-6744-4546.png" alt="Produs">
+        <p>"Zlata Praha"</p>
+        <h3>40 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+      <div class="product">
+        <img src="https://www.megaalina.md/upfiles/goods-items/421306001716379226.webp" alt="Produs">
+        <p>"Baltika 0"</p>
+        <h3>28 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+      <div class="product">
+        <img src="https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/18/45/d896912e9b214538c34ae8ea0xdd.jpg" alt="Produs">
+        <p>"Baltika Avtorskoe" nefiltrată</p>
+        <h3>20 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+      <div class="product">
+        <img src="https://alcomarket.md/public/products/thumbs/items-12183-4547.png" alt="Produs">
+        <p>"Livovskoe"</p>
+        <h3>20 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+    </div>
+
+    <h1 class="title">Gustări</h1>
+
+    <div class="container-produse">
+      <div class="product">
+        <img src="https://sodelicious.ro/wp-content/uploads/2020/09/creveti-cu-sos-de-soia-trasi-la-tigaie.jpg" alt="Produs">
+        <p>Creveți în sos</p>
+        <h3>160 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+      <div class="product">
+        <img src="https://thumbs.dreamstime.com/b/vas-de-creve%C8%9Bi-fier%C8%9Bi-proaspe%C8%9Bi-pe-mas%C4%83-31971945.jpg" alt="Produs">
+        <p>Creveți fierți</p>
+        <h3>145 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+      <div class="product">
+        <img src="https://linella.md/public/products/f1b921e9e3f19e093bbe3ece425c508f.webp" alt="Produs">
+        <p>Pește uscat în asortiment</p>
+        <h3>40 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+      <div class="product">
+        <img src="https://www.e-retete.ro/files/recipes/sprot-prajit.jpg" alt="Produs">
+        <p>Petroșel prăjit</p>
+        <h3>80 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+    </div>
+
+    <h1 class="title">Adaosuri</h1>
+
+    <div class="container-produse">
+      <div class="product">
+        <img src="https://pastry-workshop.com/wp-content/uploads/2017/08/paine-alba-de-casa-min.jpg" alt="Produs">
+        <p>Pâine de casă</p>
+        <h3>10 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+      <div class="product">
+        <img src="https://s13emagst.akamaized.net/products/30515/30514140/images/res_666e9ecabec78ae2f0eab00c34b83205.jpg" alt="Produs">
+        <p>Maioneză</p>
+        <h3>12 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+      <div class="product">
+        <img src="https://img1.zakaz.md/bc7a0866a5f84a8187fd0667c60a5303/1730876893-s350x350.jpg" alt="Produs">
+        <p>Ketchup</p>
+        <h3>12 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+      <div class="product">
+        <img src="https://linella.md/public/products/f4a46b87771aca52841301bdafe620b7.webp" alt="Produs">
+        <p>Smântână</p>
+        <h3>12 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+      <div class="product">
+        <img src="https://ggg.md/storage/products/May2021/epDuxvMtNssA1Bpc6SB8.jpg" alt="Produs">
+        <p>Lămâie</p>
+        <h3>5 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+    </div>
+
+    <button class="cart-button" onclick="cartMenu()">🛒</button>
+    <div class="cart">
+      <div class="cart-menu">
+        <h1 class="title">Coșul vostru</h1>
+        <ul id="cart-list"></ul>
+
+        <hr>
+
+        <div class="cart-plata">
+          <h3 class="suma-totala">Suma totală: <span id="total-price">0 lei</span></h3>
+          <button class="buton-comanda">Comandă</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer><span>© MealTime. Toate drepturile sunt rezervate</span></footer>
+</body>
+
+</html>

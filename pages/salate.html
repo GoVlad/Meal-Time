@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MealTime</title>
+  <link rel="icon" href="../img/1000008989.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+</head>
+
+<body>
+  <header>
+    <div class="sidebar">
+      <div class="titlu-logo">
+        <img class="logo" src="../img/1000008989.jpg">
+        <h1 class="mealtime-h1">Meal Time</h1>
+      </div>
+      <a href="../index.html">Home</a>
+      <hr class="hr-details">
+      <details class="details-content">
+        <summary>Meniu</summary>
+        <a class="details-content-a" href="bauturi.html">Băuturi</a>
+        <a href="fastfood.html">Fast Food</a>
+        <a href="labere.html">La bere</a>
+        <a href="mancalda.html">Mâncare caldă</a>
+        <a href="salate.html">Salate</a>
+        <a href="pizza.html">Pizza</a>
+      </details>
+      <hr class="hr-details">
+      <a href="contacte.html">Contacte</a>
+    </div>
+    <div class="header-mobile">
+      <div class="titlu-logo">
+        <img class="logo" src="../img/1000008989.jpg">
+        <h1 class="mealtime-h1">Meal Time</h1>
+        <button id="hamburger" onclick="mobileMenu()"><i class="fas fa-bars"></i></button>
+      </div>
+      <nav class="">
+        <a href="../index.html">Home</a>
+        <details class="details-content">
+          <summary>Meniu</summary>
+          <a href="bauturi.html">Băuturi</a>
+          <a href="fastfood.html">Fast Food</a>
+          <a href="labere.html">La bere</a>
+          <a href="mancalda.html">Mâncare caldă</a>
+          <a href="salate.html">Salate</a>
+          <a href="pizza.html">Pizza</a>
+        </details>
+        <a href="contacte.html">Contacte</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-salate">
+      <h1 class="title">Salate</h1>
+    </div>
+
+    <div class="container-produse">
+      <div class="product">
+        <img src="https://jurnalderetete.md/sites/default/files/food_9_0.jpg" alt="Produs">
+        <p>"Gingășie"</p>
+        <h3>45 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+      <div class="product">
+        <img src="https://smachnonews.24tv.ua/resources/photos/news/202403/2521822.jpg?v=1711375155000" alt="Produs">
+        <p>"Șopskii"</p>
+        <h3>35 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+      <div class="product">
+        <img src="https://retete.unica.ro/wp-content/uploads/2017/08/Salat%C4%83-greceasc%C4%83.jpg" alt="Produs">
+        <p>"Grecească"</p>
+        <h3>50 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+      <div class="product">
+        <img src="https://roll-club.kh.ua/wp-content/uploads/2018/11/salmon-caesar.jpg" alt="Produs">
+        <p>"Cezar" clasic</p>
+        <h3>75 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+      <div class="product">
+        <img src="https://doncezar.md/public/dishes/15ca40a4eac9d7cd89d8fee6f6952a27.jpg" alt="Produs">
+        <p>"Cezar" cu creveți</p>
+        <h3>100 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+
+      <button class="cart-button" onclick="cartMenu()">🛒</button>
+      <div class="cart">
+        <div class="cart-menu">
+          <h1 class="title">Coșul vostru</h1>
+          <ul id="cart-list"></ul>
+
+          <hr>
+
+          <div class="cart-plata">
+            <h3 class="suma-totala">Suma totală: <span id="total-price">0 lei</span></h3>
+            <button class="buton-comanda">Comandă</button>
+          </div>
+        </div>
+      </div>
+  </main>
+
+  <footer><span>© MealTime. Toate drepturile sunt rezervate</span></footer>
+
+
+  <script src="../js/script.js"></script>
+</body>
+
+</html>

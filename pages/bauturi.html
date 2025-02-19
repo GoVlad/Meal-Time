@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MealTime</title>
+  <link rel="icon" href="../img/1000008989.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <script src="../js/script.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="sidebar">
+      <div class="titlu-logo">
+        <img class="logo" src="../img/1000008989.jpg">
+        <h1 class="mealtime-h1">Meal Time</h1>
+      </div>
+      <a href="../index.html">Home</a>
+      <hr class="hr-details">
+      <details class="details-content">
+        <summary>Meniu</summary>
+        <a class="details-content-a" href="bauturi.html">Băuturi</a>
+        <a href="fastfood.html">Fast Food</a>
+        <a href="labere.html">La bere</a>
+        <a href="mancalda.html">Mâncare caldă</a>
+        <a href="salate.html">Salate</a>
+        <a href="pizza.html">Pizza</a>
+      </details>
+      <hr class="hr-details">
+      <a href="contacte.html">Contacte</a>
+    </div>
+    <div class="header-mobile">
+      <div class="titlu-logo">
+        <img class="logo" src="../img/1000008989.jpg">
+        <h1 class="mealtime-h1">Meal Time</h1>
+        <button id="hamburger" onclick="mobileMenu()"><i class="fas fa-bars"></i></button>
+      </div>
+      <nav class="">
+        <a href="../index.html">Home</a>
+        <details class="details-content">
+          <summary>Meniu</summary>
+          <a href="bauturi.html">Băuturi</a>
+          <a href="fastfood.html">Fast Food</a>
+          <a href="labere.html">La bere</a>
+          <a href="mancalda.html">Mâncare caldă</a>
+          <a href="salate.html">Salate</a>
+          <a href="pizza.html">Pizza</a>
+        </details>
+        <a href="contacte.html">Contacte</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-bauturi">
+      <h1 class="title">Băuturi</h1>
+    </div>
+
+    <h1 class="title">Cafea naturală</h1>
+
+    <div class="container-produse">
+      <div class="product">
+        <img src="../img/Latte.png" alt="Produs">
+        <p>Cappuccino/Latte</p>
+        <h3>25 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+      <div class="product">
+        <img src="../img/Espresso.png" alt="Produs">
+        <p>Espresso</p>
+        <h3>25 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+      <div class="product">
+        <img src="../img/Espresso2.png" alt="Produs">
+        <p>Dublu Espresso</p>
+        <h3>50 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+      <div class="product">
+        <img src="../img/Americano.png" alt="Produs">
+        <p>Americano</p>
+        <h3>25 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+    </div>
+
+    <h1 class="title">Cocktailuri</h1>
+
+    <div class="container-produse">
+      <div class="product">
+        <img src="../img/Mojito-alco.png" alt="Produs">
+        <p>Mojito cu alcool</p>
+        <h3>0.25 l - 65 lei</h3>
+        <h3>0.5 l - 85 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+      <div class="product">
+        <img src="../img/Mojito-nonalco.png" alt="Produs">
+        <p>Mojito fără alcool</p>
+        <h3>55 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+      <div class="product">
+        <img src="../img/Mojito-nonalco-sirop.png" alt="Produs">
+        <p>Mojito fără alcool cu adaos de sirop</p>
+        <h3>75 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+      <div class="product">
+        <img
+          src="https://healthfulblondie.com/wp-content/uploads/2021/12/oat-milk-hot-chocolate-tn.jpg" alt="Produs">
+        <p>Băutură de ciocolată</p>
+        <h3>70 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+      <div class="product">
+        <img src="../img/Energy Drink.png" alt="Produs">
+        <p>Energy Drink</p>
+        <h3>50 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+      <div class="product">
+        <img src="../img/Cuba Libre.png" alt="Produs">
+        <p>Cuba Libre</p>
+        <h3>50 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+    </div>
+
+    <h1 class="title">Băuturi răcoritoare</h1>
+
+    <div class="container-produse">
+      <div class="product">
+        <img src="../img/ColaSpriteFantaSwepps.png" alt="Produs">
+        <p>Fanta/Cola/Sprite/Swepps</p>
+        <h3>0.33 l - 20 lei</h3>
+        <h3>0.5 l - 25 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+      <div class="product">
+        <img src="../img/Pitbull.png" alt="Produs">
+        <p>Băutură energizantă "Pitbull"</p>
+        <h3>20 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+      <div class="product">
+        <img src="../img/Alcalia.png" alt="Produs">
+        <p>Apă minerală "Alcalia"</p>
+        <h3>15 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+      <div class="product">
+        <img src="../img/Bucovina.png" alt="Produs">
+        <p>Apă carbogazoasă/plată/fructată "Bucovina"</p>
+        <h3>15 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+      <div class="product">
+        <img src="../img/Tymbark.png" alt="Produs">
+        <p>Suc "Timbark"</p>
+        <h3>19 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+      <div class="product">
+        <img src="../img/Queens.png" alt="Produs">
+        <p>Suc "Queens"</p>
+        <h3>24 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+      <div class="product">
+        <img src="../img/Ciao.png" alt="Produs">
+        <p>Suc "Ciao"</p>
+        <h3>45 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+      <div class="product">
+        <img src="../img/Limonada.png" alt="Produs">
+        <p>Limonadă</p>
+        <h3>0.3 l - 10 lei</h3>
+        <h3>0.5 l - 15 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+    </div>
+
+    <h1 class="title">Băuturi alcoolice</h1>
+
+    <div class="container-produse">
+      <div class="product">
+        <img src="https://linella.md/public/products/58ca05b9d6f939a4a9af7896d55801ca.webp" alt="Produs">
+        <p>"Festival"</p>
+        <h3>27 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+      <div class="product">
+        <img src="https://img1.zakaz.md/c350a349ef6449e29417dcc03c9f0b3e/1726820644-s350x350.jpg" alt="Produs">
+        <p>"Mixoff"</p>
+        <h3>30 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+      <div class="product">
+        <img src="https://www.megaalina.md/upfiles/goods-items/837961001711114241.webp" alt="Produs">
+        <p>"Max Jack's"</p>
+        <h3>26 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+      <div class="product">
+        <img src="https://alcomarket.md/public/products/thumbs/items-6020-4314.png" alt="Produs">
+        <p>"Tezaur"</p>
+        <h3>190 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+      <div class="product">
+        <img src="https://alcomarket.md/public/products/thumbs/version_400x400/items-5601-4705.png" alt="Produs">
+        <p>"Kvint"</p>
+        <h3>140 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+      <div class="product">
+        <img
+          src="https://eurodivin.md/upload/resize_cache/iblock/606/511_500_140cd750bba9870f18aada2478b24840a/b25mudyubvrx4sz6tn4ovrc163iyddfc.png"
+          alt="Produs">
+        <p>"Louis de Conte"</p>
+        <h3>170 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+      <div class="product">
+        <img src="https://alcomarket.md/public/products/thumbs/items-9949-4709.png" alt="Produs">
+        <p>"Premier"</p>
+        <h3>190 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+      <div class="product">
+        <img src="https://alcomarket.md/public/products/thumbs/92b9156924ea2e259c8ef41ad3548957.png" alt="Produs">
+        <p>"Cojușna"</p>
+        <h3>150 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+      <div class="product">
+        <img src="https://vladalina.md/cron/images/1140202188.png" alt="Produs">
+        <p>"Gubernator"</p>
+        <h3>155 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+      <div class="product">
+        <img src="https://buhlo.md/wp-content/uploads/2019/11/jim-beam-bourbon-1750ml-800x600-1.jpg" alt="Produs">
+        <p>"Jim Beam"</p>
+        <h3>550 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+      <div class="product">
+        <img src="https://alcomarket.md/public/products/thumbs/version_400x400/9a441f97c1ab4c7d4bd29e45b6e0ca7d.png"
+          alt="Produs">
+        <p>"Red Label"</p>
+        <h3>425 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+      <div class="product">
+        <img src="https://alcomarket.md/public/products/thumbs/items-5098-3265.png" alt="Produs">
+        <p>"Bailey's"</p>
+        <h3>605 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+      <div class="product">
+        <img
+          src="https://spiritsvillage.com/19968-large_default/680170-01-j-b-justerini-brooks-rare-blended-scotch-whisky-40-vol-0-7l.jpg"
+          alt="Produs">
+        <p>"Justerini"</p>
+        <h3>560 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+      <div class="product">
+        <img src="https://alcomarket.md/public/products/thumbs/items-5034-3935.png" alt="Produs">
+        <p>"Jameson"</p>
+        <h3>750 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+      <div class="product">
+        <img src="https://buhlo.md/wp-content/uploads/2019/11/ytutyu.jpg" alt="Produs">
+        <p>"Chivas"</p>
+        <h3>1300 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+      <div class="product">
+        <img src="https://alcomarket.md/public/products/thumbs/version_400x400/items-5102-4280.png" alt="Produs">
+        <p>"Sheridan's"</p>
+        <h3>750 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+      <div class="product">
+        <img src="https://alcomarket.md/public/products/thumbs/items-4041-5222.png" alt="Produs">
+        <p>"Wilson"</p>
+        <h3>200 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+      <div class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQim58IREGoOTaBBf9xfVF3Ec3_ylWs9AP86A&s"
+          alt="Produs">
+        <p>"Jagermeister"</p>
+        <h3>300 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+    </div>
+
+    <h1 class="title">Înghețată</h1>
+
+    <div class="container-produse">
+      <div class="product">
+        <img src="https://linella.md/public/products/c86419765f9163aae94d713410b5c3fb.webp" alt="Produs">
+        <p>"Mochi"</p>
+        <h3>22 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+      <div class="product">
+        <img src="https://www.oceanfish.md/imageproducts/0033/products-32212-3874.jpg" alt="Produs">
+        <p>"Macaroon"</p>
+        <h3>27 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+      <div class="product">
+        <img src="https://static.mega-image.ro/medias/sys_master/h4f/h34/9296049668126.jpg" alt="Produs">
+        <p>"Double Sunlover"</p>
+        <h3>37 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+      <div class="product">
+        <img src="https://pacomarket.ro/wp-content/uploads/2024/05/product_8714100289983_0.jpg" alt="Produs">
+        <p>"Magnum"</p>
+        <h3>36 lei</h3>
+        <div class="overlay" onclick="addToCart(event)">Adaugă în coș</div>
+      </div>
+    </div>
+
+    <button class="cart-button" onclick="cartMenu()">🛒</button>
+    <div class="cart">
+      <div class="cart-menu">
+        <h1 class="title">Coșul vostru</h1>
+        <ul id="cart-list"></ul>
+
+        <hr>
+
+        <div class="cart-plata">
+          <h3 class="suma-totala">Suma totală: <span id="total-price">0 lei</span></h3>
+          <button class="buton-comanda">Comandă</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer><span>© MealTime. Toate drepturile sunt rezervate</span></footer>
+</body>
+
+</html>
