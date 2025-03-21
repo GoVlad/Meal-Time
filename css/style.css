@@ -60,6 +60,9 @@ main {
 .sidebar .mealtime-h1 {
   font-size: 1.8rem;
   font-weight: bold;
+  color: white;
+  font-family: 'Lobster';
+  text-decoration: none;
 }
 
 .sidebar a {
@@ -181,7 +184,14 @@ footer span {
   background-image: url(../img/Banner-supe.jpg);
 }
 
-.page-title,.page-bauturi,.page-fastfood,.page-bere,.page-mancalda,.page-pizza,.page-salate,.page-supe {
+.page-title,
+.page-bauturi,
+.page-fastfood,
+.page-bere,
+.page-mancalda,
+.page-pizza,
+.page-salate,
+.page-supe {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -193,21 +203,47 @@ footer span {
   margin-bottom: 20px;
 }
 
-.page-title h1,.page-title p,.page-bauturi h1,.page-bauturi p,.page-fastfood h1,.page-fastfood p,.page-bere h1,.page-bere p,.page-mancalda h1,.page-mancalda p,.page-pizza h1,
-.page-pizza p,.page-salate h1,.page-salate p {
+.page-title h1,
+.page-title p,
+.page-bauturi h1,
+.page-bauturi p,
+.page-fastfood h1,
+.page-fastfood p,
+.page-bere h1,
+.page-bere p,
+.page-mancalda h1,
+.page-mancalda p,
+.page-pizza h1,
+.page-pizza p,
+.page-salate h1,
+.page-salate p {
   color: white;
   font-family: "Lobster";
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
   border-radius: 5px;
 }
 
-.page-title h1,.page-bauturi h1,.page-bere h1,.page-fastfood h1,.page-mancalda h1,.page-pizza h1,.page-salate h1 {
+.page-title h1,
+.page-bauturi h1,
+.page-bere h1,
+.page-fastfood h1,
+.page-mancalda h1,
+.page-pizza h1,
+.page-salate h1 {
   font-size: 120px;
   padding: 10px;
 }
 
+.page-title h1 span {
+  margin-right: 22px;
+}
+
 .page-title p {
   font-size: 30px;
+  width: calc(100%-5px);
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .container-produse {
@@ -219,8 +255,8 @@ footer span {
 
 .product {
   position: relative;
-  width: 250px;
-  max-width: 275px;
+  width: 275px;
+  max-width: 300px;
   padding: 10px;
   background: white;
   border-radius: 10px;
@@ -654,12 +690,24 @@ td {
   .page-mancalda h1,
   .page-pizza h1,
   .page-salate h1 {
-    font-size: 60px;
+    font-size: 50px;
+    letter-spacing: 5px;
+  }
+
+  .page-title h1 span {
+    margin: 0;
+    font-size: 50px;
+  }
+
+  .page-title .motto {
+    align-items: center;
+    justify-content: center;
   }
 
   .page-title p {
     font-size: 16px;
     margin-left: 5%;
+    padding: 5px;
   }
 
   .title {
