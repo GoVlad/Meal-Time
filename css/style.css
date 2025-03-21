@@ -353,7 +353,7 @@ footer span {
 .cart-menu {
   background-color: white;
   width: 50%;
-  max-height: 80%;
+  height: 80%;
   overflow-y: auto;
   left: 0;
   padding: 20px;
