@@ -35,4 +35,15 @@ function addToCart(event) {
 
     listItem.appendChild(removeBtn);
     cartList.appendChild(listItem);
+
+    showAddToCartNotification();
+}
+
+function showAddToCartNotification() {
+    let message = document.getElementById('cartMessage');
+    message.style.display = 'block';
+
+    setTimeout(function() {
+        message.style.display = 'none';
+    }, 1000); 
 }
