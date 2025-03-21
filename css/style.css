@@ -428,6 +428,25 @@ footer span {
   background: rgb(48, 114, 17);
 }
 
+.cart-message {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  transform: translateX(-50%);
+  background-color: rgb(48, 114, 17); 
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 90%;
+  white-space: nowrap;
+  word-wrap: break-word;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
 .working-hours {
   margin-bottom: 25px;
 }
@@ -756,6 +775,14 @@ td {
   .cart-menu {
     width: 100%;
     margin: 15px;
+  }
+
+    .cart-message {
+    font-size: 12px;
+    white-space: nowrap;
+    word-wrap: break-word;
+    max-width: 95%;
+    right: 0;
   }
 
   .contacte,
